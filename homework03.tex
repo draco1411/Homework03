@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{theJackPack}
+
+\title{homework 3 - Jack Brolin, Abhiram Nallamalli}
+\author{Jack Brolin}
+\date{July 2023}
+
+\begin{document}
+
+\maketitle
+
+\begin{jacklist}
+    \begin{framed} 
+    \item [\textbf{P. 2}] Let $P=\left\{x \in \mathbb{R}^{3} \mid x_{1}+x_{2}+x_{3}=1, x \geq 0\right\}$ and consider the vector 
+        $x=(0,0,1)$. Find the set of feasible directions at $x$.
+    \end{framed}
+
+\newpage
+    \begin{framed} 
+    \item [\textbf{P. 3}] Consider the problem of minimizing $c^{\prime} x$ over a polyhedron $P$. Prove the following:
+        \begin{itemize}
+            \item [a.] A feasible solution $x$ is optimal if and only if $c^{\prime} d \geq 0$ for every feasible direction $d$ at $x$. 
+            \item [b.] A feasible solution $x$ is the unique optimal solution if and only if $c^{\prime} d>0$ 
+                for every nonzero feasible direction $d$ at $x$. 
+        \end{itemize}
+    \end{framed}
+    \begin{itemize}
+        \item [a.] 
+        \item [b.]
+    \end{itemize}
+
+\newpage
+    \begin{framed} 
+    \item [\textbf{P. 4}] Let $x$ be an element of the standard form polyhedron 
+        $P=\left\{x \in \mathbb{R}^{n} \mid A x=b, x \geq 0\right\}$. Prove that a vector $d \in \mathbb{R}^{n}$ is a feasible 
+        direction at $x$ if and only if $A d=0$ and $d_{i} \geq 0$ for every $i$ such that $x_{i}=0$.
+    \end{framed}
+
+\newpage
+    \begin{framed} 
+    \item [\textbf{P. 7}] Consider a feasible solution $x$ to the standard form problem 
+        \begin{align*}
+            \text{minimize} & c^{\prime} x \\
+            \text { subject to } & A x=b \\
+            & x \geq 0,
+        \end{align*}
+        and let $Z=\left\{i: x_{i}=0\right\}$. Show that $x$ is an optimal solution if and only if the linear programming problem
+        \begin{align*}
+            \operatorname{minimize} & c^{\prime} d \\
+            \text { subject to } & A d=0 \quad \\
+            & d_{i} \geq 0, \quad i \in Z,
+        \end{align*}
+        has an optimal cost of zero.
+    \end{framed}
+
+\newpage
+    \begin{framed} 
+    \item [\textbf{P. 9}] Consider the problem 
+        \[\begin{array}{rc}
+            \operatorname{minimize} & -2 x_{1}-x_{2} \\
+            \text { subject to } & x_{1}-x_{2} \leq 2 \\
+            & x_{1}+x_{2} \leq 6 \\
+            & x_{1}, x_{2} \geq 0
+        \end{array}\]
+    \end{framed}
+\end{jacklist}
+
+\end{document}
