@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.6)  12 JUL 2023 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.6)  12 JUL 2023 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -47,7 +47,7 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@height=\dimen139
 \Gin@req@width=\dimen140
 )
-(/usr/local/texlive/texmf-local/tex/latex/theJackPack.sty
+(./theJackPack.sty
 (/usr/local/texlive/2022/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count193
@@ -574,11 +574,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [4] [5]
 (./homework03.aux) ) 
 Here is how much of TeX's memory you used:
- 14815 strings out of 478268
- 287148 string characters out of 5846348
+ 14816 strings out of 478268
+ 287048 string characters out of 5846348
  559308 words of memory out of 5000000
- 32785 multiletter control sequences out of 15000+600000
- 476316 words of font info for 57 fonts, out of 8000000 for 9000
+ 32786 multiletter control sequences out of 15000+600000
+ 476662 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,11n,103p,424b,262s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsf
@@ -591,12 +591,14 @@ cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
 mr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb>
-Output written on homework03.pdf (5 pages, 110850 bytes).
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on homework03.pdf (5 pages, 128907 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
