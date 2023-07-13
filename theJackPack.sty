@@ -1,0 +1,91 @@
+%\setlength\itemsep{1.5em} to make the space bigger, jay
+
+%indent & slash
+\usepackage{changepage} 
+\usepackage{ulem} 
+
+%make the page wider, ya heard?
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+%image Packages
+\usepackage{listings}
+\usepackage{graphicx}
+
+%   \begin{center}
+%       \includegraphics[scale=.5]{im/qq.jpg}
+%   \end{center}
+
+%math Packages
+\usepackage{amssymb}
+% https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+% makes a center box,, slightly different from the boxed env.
+\newenvironment{cbox}
+    {\begin{center}
+    \begin{tabular}{|p{0.7\textwidth}|}
+    \hline
+    }
+    { 
+    \\\hline
+    \end{tabular} 
+    \end{center}
+}
+
+%adds a colored box in the env.
+\usepackage{tcolorbox}
+%\begin{tcolorbox}...\end{tcolorbox}
+
+%Adds the framed env for problems 
+\usepackage{framed}
+
+
+%Gives a slash fraction
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+
+
+%theorem Packages
+\theoremstyle{definition}
+\newtheorem{definition}{Theorem}
+
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+
+
+\newenvironment{ranger}
+    {
+        \begin{adjustwidth}{1.5cm}{}
+        \vspace{.5cm}
+        $
+    }
+    {
+        $
+        \vspace{.5cm}
+        \end{adjustwidth}
+    }
+
+    
+\newenvironment{jacklist}
+    {
+        \begin{itemize}
+        \setlength\itemsep{3em}
+    }
+    {
+        \end{itemize}
+    }
+
+
+    \makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+% Usage for a 4 x 4 matrix augmented down the middle
+% \begin{pmatrix}[cc|cc]...\end{pmatrix}
