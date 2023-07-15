@@ -43,13 +43,15 @@
         \item [a.] 
             \begin{proof}
                 Assume $x$ is an optimal solution and let $d$ be any arbitrary feasible direction vector at $x$. Then $x + \theta d 
-                \in P$ for some $\theta > 0$. For this new vector, the optimality of $x$ implies 
+                \in P$ for some $\theta > 0$. For this new vector, 
                 \begin{align*}
-                    c^\prime x^\star &\leq c^\prime(x^\star + \theta d) \\
-                    c^\prime x^\star &\leq c^\prime x^\star + \theta c^\prime d \\
-                    0 &\leq \theta c^\prime d \\
-                    0 &\leq c^\prime d
+                    \text{optimality of } x \Leftrightarrow c^\prime x^\star &\leq c^\prime(x^\star + \theta d) \\
+                    \Leftrightarrow c^\prime x^\star &\leq c^\prime x^\star + \theta c^\prime d \\
+                    \Leftrightarrow 0 &\leq \theta c^\prime d \\
+                    \Leftrightarrow 0 &\leq c^\prime d
                 \end{align*}
+                Because the algebra works in both directions, and we know $\theta > 0$, the sufficient condition are shown 
+                bi-conditionally. 
             \end{proof}
         \item [b.]
     \end{itemize}
