@@ -34,49 +34,26 @@
     \begin{framed} 
     \item [\textbf{P. 3}] Consider the problem of minimizing $c^{\prime} x$ over a polyhedron $P$. Prove the following:
         \begin{itemize}
-            \item [a.] A feasible solution $x$ is optimal if and only if $c^{\prime} d \geq \textbf{0}$ for every feasible direction 
-                $d$ at $x$. 
-            \item [b.] A feasible solution $x$ is the unique optimal solution if and only if $c^{\prime} d> \textbf{0}$ 
+            \item [a.] A feasible solution $x$ is optimal if and only if $c^{\prime} d \geq 0$ for every feasible direction $d$ at $x$. 
+            \item [b.] A feasible solution $x$ is the unique optimal solution if and only if $c^{\prime} d>0$ 
                 for every nonzero feasible direction $d$ at $x$. 
         \end{itemize}
     \end{framed}
     \begin{itemize}
         \item [a.] 
             \begin{proof}
-                Assume $x^\star$ is an optimal solution and let $d$ be any arbitrary feasible direction vector at $x^\star$.
-                Then $x^\star + \theta d \in P$ for some $\theta > 0$. For this new vector, the optimality of $x^\star$ implies 
+                Assume $x$ is an optimal solution and let $d$ be any arbitrary feasible direction vector at $x$. Then $x + \theta d 
+                \in P$ for some $\theta > 0$. For this new vector, 
                 \begin{align*}
-                    &c^\prime x^\star \leq c^\prime(x^\star + \theta d) \\
-                    \Rightarrow \quad &c^\prime x^\star \leq c^\prime x^\star + \theta c^\prime d \\
-                    \Rightarrow \quad &\textbf{0} \leq \theta c^\prime d \\
-                    \Rightarrow \quad &\textbf{0} \leq c^\prime d
+                    \text{optimality of } x \Leftrightarrow c^\prime x^\star &\leq c^\prime(x^\star + \theta d) \\
+                    \Leftrightarrow c^\prime x^\star &\leq c^\prime x^\star + \theta c^\prime d \\
+                    \Leftrightarrow 0 &\leq \theta c^\prime d \\
+                    \Leftrightarrow 0 &\leq c^\prime d
                 \end{align*}
-                Now assume $c^\prime d \geq \textbf{0}$ for all feasible directions $d$ at $x$. Let $y := x + \theta d$ for any $d$.
-                Then $\theta d = y - x$ and we see 
-                \[ 
-                    \textbf{0} \leq \theta c^\prime d = \theta c^\prime(y-x) = \theta c^\prime y - \theta c^\prime x \Rightarrow 
-                    \theta c^\prime y \geq \theta c^\prime x \Rightarrow c^\prime y \geq c^\prime x
-                \] 
-                Showing that $x$ is indeed optimal.
+                Because the algebra works in both directions, and we know $\theta > 0$, the sufficient condition are shown 
+                bi-conditionally. 
             \end{proof}
-        \item [b.] 
-            \begin{proof}
-                Assume $x^\star$ is the unique optimal solution and let $d$ be any arbitrary feasible direction vector at $x^\star$.
-                Then $x^\star + \theta d \in P$ for some $\theta > 0$. For this new vector, the optimality of $x^\star$ implies 
-                \begin{align*}
-                    &c^\prime x^\star < c^\prime(x^\star + \theta d) \\
-                    \Rightarrow \quad &c^\prime x^\star < c^\prime x^\star + \theta c^\prime d \\
-                    \Rightarrow \quad &\textbf{0} < \theta c^\prime d \\
-                    \Rightarrow \quad &\textbf{0} < c^\prime d
-                \end{align*}
-                Now assume $c^\prime d > \textbf{0}$ for all nonzero feasible directions $d$ at $x$. Let $y := x + \theta d$ for any $d$.
-                Then $\theta d = y - x$ and we see 
-                \[ 
-                    \textbf{0} < \theta c^\prime d = \theta c^\prime(y-x) = \theta c^\prime y - \theta c^\prime x \Rightarrow 
-                    \theta c^\prime y > \theta c^\prime x \Rightarrow c^\prime y > c^\prime x
-                \] 
-                Showing that $x$ is indeed the unique optimal solution.
-            \end{proof}
+        \item [b.]
     \end{itemize}
 
 \newpage
